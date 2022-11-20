@@ -1,12 +1,18 @@
 import { useState } from 'react'
+import DisplayHeader from './components/DisplayHeader'
+import DisplayPostList from './components/DisplayPostList'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className="flex flex-col">
+      <div className="flex flex-row-reverse py-1 px-1">
+        <DisplayHeader />
+      </div>
+      <DisplayPostList />
+
+    </div>
   )
 }
 
