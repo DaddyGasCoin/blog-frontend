@@ -12,7 +12,7 @@ const DisplayPostList = () => {
             setPosts(response.data.posts)
         }
 
-        getAllPosts().then(console.log(posts))
+        getAllPosts()
     }, [])
 
     return (
