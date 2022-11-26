@@ -1,11 +1,10 @@
-import { useState } from 'react'
 import DisplayHeader from './components/DisplayHeader'
 import DisplayPostList from './components/DisplayPostList'
 import DisplayPost from './components/DisplayPost';
+import LoginForm from './components/LoginForm';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
 
@@ -17,6 +16,7 @@ function App() {
             <Route path='/posts'>
               <Route path=":Id" element={<DisplayPost />} />
             </Route>
+            <Route path='/login' element={<LoginForm />} />
           </Route>
         </Routes>
       </div>
@@ -24,11 +24,5 @@ function App() {
 
   )
 }
-{/* <div className="flex flex-col">
-  <div className="flex flex-row-reverse py-1 px-1">
-    <DisplayHeader />
-  </div>
-  <DisplayPostList />
-</div> */}
 
 export default App
