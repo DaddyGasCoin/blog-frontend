@@ -13,7 +13,7 @@ const DisplayPost = () => {
     useEffect(() => {
         async function getPostData() {
             try {
-                const response = await axios.get(`https://blooming-cliffs-25018.herokuapp.com/post/${postID}`)
+                const response = await axios.get(`https://blogapi-production-d43c.up.railway.app/post/${postID}`)
                 setPostData(response.data)
             } catch (error) {
                 console.log(error)

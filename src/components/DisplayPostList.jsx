@@ -8,7 +8,7 @@ const DisplayPostList = () => {
     const [posts, setPosts] = useState()
     useEffect(() => {
         async function getAllPosts() {
-            const response = await axios.get('https://blooming-cliffs-25018.herokuapp.com/posts')
+            const response = await axios.get('https://blogapi-production-d43c.up.railway.app/posts')
             setPosts(response.data.posts)
         }
 

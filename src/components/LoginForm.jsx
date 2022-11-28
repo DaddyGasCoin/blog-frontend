@@ -50,7 +50,7 @@ const LoginForm = () => {
                 filter: 'blur(4px)'
             })
 
-            const resp = await axios.post('https://blooming-cliffs-25018.herokuapp.com/user/login',
+            const resp = await axios.post('https://blogapi-production-d43c.up.railway.app/user/login',
                 {
                     username: values.username,
                     password: values.password
