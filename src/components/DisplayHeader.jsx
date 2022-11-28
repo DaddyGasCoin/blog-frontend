@@ -33,9 +33,9 @@ const DisplayHeader = () => {
          <div className="flex flex-row-reverse py-1 px-1">
             <div className="flex flex-row-reverse py-1 px-1">
                <Button type="text" size='large' href='/login'>
-                  {user ? user : 'LOGIN'}
+                  {user ? user : 'Login'}
                </Button>
-               <Button type="text" size='large'>Sign-Up</Button>
+               <Button type="text" size='large' href='/signup'>Sign-Up</Button>
             </div>
          </div>
          <Outlet />
