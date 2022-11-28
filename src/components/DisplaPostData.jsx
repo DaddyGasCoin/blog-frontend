@@ -2,7 +2,6 @@ import { formatDistanceToNow, parseISO } from 'date-fns'
 
 
 const DisplayPostData = (props) => {
-    console.log(props)
     const { post } = props
 
     return (
