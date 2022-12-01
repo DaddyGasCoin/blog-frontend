@@ -9,7 +9,7 @@ function App() {
 
   return (
 
-    <BrowserRouter basename="/">
+    <BrowserRouter basename="/blog-frontend">
       <div className="flex flex-col">
         <Routes>
           <Route path='/' element={<DisplayHeader />}>
