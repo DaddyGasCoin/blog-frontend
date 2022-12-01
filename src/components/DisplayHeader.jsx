@@ -1,6 +1,7 @@
 import { Button, Dropdown } from 'antd';
 import { useEffect, useState } from 'react';
 import { Outlet } from "react-router-dom";
+import { HomeOutlined } from '@ant-design/icons';
 
 const DisplayHeader = () => {
 
@@ -54,8 +55,9 @@ const DisplayHeader = () => {
    })
    return (
       <>
-         <div className="flex flex-row-reverse py-1 px-1">
-            <div className="flex flex-row-reverse py-1 px-1">
+         <div className="flex flex-row justify-between py-1 px-1 mb-5 shadow-md">
+            <Button type="text" size='large' href='/' icon={<HomeOutlined />} />
+            <div className="flex flex-row-reverse">
                {user ?
                   <Dropdown
                      menu={{
