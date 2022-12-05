@@ -13,7 +13,8 @@ const DisplayPostData = (props) => {
                 </div>
                 <div className="text-lg text-gray-600">{post.user.username}, </div>
             </div>
-            <div className="text-lg font-sans font-medium text-gray-600 mb-10">{post.message}</div>
+            <div className="text-lg font-sans font-medium text-gray-600 mb-10"
+                dangerouslySetInnerHTML={{ __html: post.message }}></div>
         </div>
     )
 }
