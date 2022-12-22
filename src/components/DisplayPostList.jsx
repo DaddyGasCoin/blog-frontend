@@ -8,7 +8,7 @@ const DisplayPostList = () => {
     const [posts, setPosts] = useState()
     useEffect(() => {
         async function getAllPosts() {
-            const response = await axios.get('https://blogapi-production-d43c.up.railway.app/posts')
+            const response = await axios.get('https://blog-backend-4u64.onrender.com/posts')
             setPosts(response.data.posts)
         }
 

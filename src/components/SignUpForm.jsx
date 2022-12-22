@@ -57,14 +57,14 @@ const SignUpForm = () => {
             setBlurState({
                 filter: 'blur(4px)'
             })
-            const resp = await axios.post('https://blogapi-production-d43c.up.railway.app/user/create',
+            const resp = await axios.post('https://blog-backend-4u64.onrender.com/user/create',
                 {
                     username: values.username,
                     password: values.password,
                     first_name: values.firstname,
                     last_name: values.lastname
                 })
-            const log = await axios.post('https://blogapi-production-d43c.up.railway.app/user/login',
+            const log = await axios.post('https://blog-backend-4u64.onrender.com/user/login',
                 {
                     username: values.username,
                     password: values.password

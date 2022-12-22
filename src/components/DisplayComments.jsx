@@ -57,7 +57,7 @@ const DisplayComments = (props) => {
       }
       else {
          try {
-            const resp = await axios.post(`https://blogapi-production-d43c.up.railway.app/comment/${postID}/create`,
+            const resp = await axios.post(`https://blog-backend-4u64.onrender.com/comment/${postID}/create`,
                {
                   message: value
                }, {
